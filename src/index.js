@@ -7,19 +7,14 @@ import {
 } from "react-router-dom";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import AboutMe from './routes/about-me';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    children: [
-      {
-      path: "/about-me",
-      element: <AboutMe />
-    },
-    ]
+    
   },
 ]);
 

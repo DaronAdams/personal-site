@@ -2,23 +2,18 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div class="drawer drawer-mobile">
-  <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col items-center justify-center shadow-2xl">
-    <div class="bg-neutral w-full h-full">
-      Stuff
-    </div>
-    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-  </div> 
-  <div class="drawer-side">
-    <label for="my-drawer-2" class="drawer-overlay"></label> 
-    <ul class="menu p-4 w-80 bg-base-100 text-base-content">
-      <li><a href='#a'>About Me</a></li>
-      <li><a href='#a'>Projects</a></li>
-      <li><a href='#a'>Resume</a></li>
-      <li><a href='#a'>Blog</a></li>
+    <div className="navbar bg-base-100">
+  <div className="flex-1">
+    <a className="btn btn-ghost normal-case text-xl">.  </a>
+  </div>
+  <div className="flex-none">
+    <ul className="menu menu-horizontal px-1 ">
+      <li><a href='#aboutme' className='hover:bg-secondary'>About Me</a></li>
+      <li><a className='hover:bg-secondary'>Projects</a></li>
+      <li><a className='hover:bg-secondary'>Blog</a></li>
+      <li><a className='hover:bg-secondary'>Contact Me</a></li>
+      <a className="btn btn-outline btn-secondary">Resume</a>
     </ul>
-  
   </div>
 </div>
   )
